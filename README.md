@@ -1,7 +1,15 @@
 pkginstall
 ==========
 
-shell script for installing packages via Mac OS X's `installer` program instead of GUI
+shell script for installing packages via Mac OS X's `installer` program instead of GUI.
+Supports rebooting. Future works: support DMGs, customized pkg (like MS Office).
+
+### How to use
+
+Place all your pkg files in the same folder as `pkginstall.sh`, then run
+```bash
+zsh pkginstall.sh
+```
 
 ### A note about quickly mounting DMGs
 

@@ -37,7 +37,7 @@ then
 		REBOOT=yes
 fi
 
-for FILE in $@
+for FILE in ./*
 do
 
 	if [[ -r "$FILE" ]]
@@ -46,7 +46,6 @@ do
 
 		# zsh - get extension
 		EXT="$FILE:e"
-
 		if [ "$EXT" = "pkg" -o "$EXT" = "mpkg" ]
 		then
 
